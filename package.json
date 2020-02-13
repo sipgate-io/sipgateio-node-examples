@@ -1,0 +1,55 @@
+{
+	"name": "sipgateio-node-examples",
+	"version": "1.0.0",
+	"description": "Examples for the sipgateio-node examples",
+	"main": "index.js",
+	"scripts": {
+		"call": "ts-node ./call/call.ts",
+		"contacts:import:vcard:private": "ts-node ./contacts/contacts_import_vcard_private.ts",
+		"contacts:import:vcard:shared": "ts-node ./contacts/contacts_import_vcard_shared.ts",
+		"contacts:import:csv": "ts-node ./contacts/contacts_import_csv.ts",
+		"contacts:import:object": "ts-node ./contacts/contacts_import_object.ts",
+		"contacts:export:csv": "ts-node ./contacts/contacts_export_csv.ts",
+		"contacts:export:vcards": "ts-node ./contacts/contacts_export_vcards.ts",
+		"fax": "ts-node ./fax/fax.ts",
+		"settings:set:log": "ts-node ./settings/settings_set_log.ts",
+		"settings:set:url:incoming": "ts-node ./settings/settings_set_url_incoming.ts",
+		"settings:set:url:outgoing": "ts-node ./settings/settings_set_url_outgoing.ts",
+		"settings:whitelist:clear": "ts-node ./settings/settings_whitelist_clear.ts",
+		"settings:whitelist:disable": "ts-node ./settings/settings_whitelist_disable.ts",
+		"settings:whitelist:set": "ts-node ./settings/settings_whitelist_set.ts",
+		"sms:send:extension": "ts-node ./sms/sms_send_extension.ts",
+		"sms:send:extension:timed": "ts-node ./sms/sms_send_extension_timed.ts",
+		"sms:send:phone": "ts-node ./sms/sms_send_phone.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sipgate-io/sipgateio-node-examples.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sipgate-io/sipgateio-node-examples/issues"
+	},
+	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
+	"dependencies": {
+		"sipgateio": "^1.1.0",
+		"typescript": "^3.7.5",
+		"ts-node": "^8.6.2"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^2.9.0",
+		"@typescript-eslint/parser": "^2.9.0",
+		"eslint": "^6.7.1",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-plugin-autofix": "0.0.9",
+		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+		"eslint-plugin-standard": "^4.0.1",
+		"prettier": "^1.19.1"
+	}
+}
