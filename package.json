@@ -20,7 +20,8 @@
 		"settings:whitelist:set": "ts-node ./settings/settings_whitelist_set.ts",
 		"sms:send:extension": "ts-node ./sms/sms_send_extension.ts",
 		"sms:send:extension:timed": "ts-node ./sms/sms_send_extension_timed.ts",
-		"sms:send:phone": "ts-node ./sms/sms_send_phone.ts"
+		"sms:send:phone": "ts-node ./sms/sms_send_phone.ts",
+		"webhook:gather": "ts-node ./webhook/webhook_gather.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -33,7 +34,7 @@
 	},
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
-		"sipgateio": "^1.1.0",
+		"sipgateio": "^1.3.0",
 		"typescript": "^3.7.5",
 		"ts-node": "^8.6.2"
 	},
