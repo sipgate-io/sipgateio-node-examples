@@ -27,9 +27,9 @@ webhookModule
 		port,
 		serverAddress,
 	})
-	.then(webhookserver => {
+	.then(webhookServer => {
 		console.log(`Server running at ${serverAddress}\nReady for calls 📞`);
-		webhookserver.onNewCall(newCallEvent => {
+		webhookServer.onNewCall(newCallEvent => {
 			console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
 
 			return WebhookResponse.gatherDTMF({
@@ -38,7 +38,7 @@ webhookModule
 				announcement: 'https://static.sipgate.com/examples/wav/example.wav',
 			});
 		});
-		webhookserver.onData(dataEvent => {
+		webhookServer.onData(dataEvent => {
 			console.log(
 				`The caller pressed ${dataEvent.dtmf ? dataEvent.dtmf : 'nothing'}`
 			);
