@@ -1,23 +1,8 @@
-import {
-	createSettingsModule,
-	createWebhookModule,
-	sipgateIO,
-} from 'sipgateio';
+import { createWebhookModule } from 'sipgateio';
 
 const port = 8080;
-const serverAddress = process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS || '';
-
-const password = process.env.SIPGATE_PASSWORD || '';
-const username = process.env.SIPGATE_USERNAME || '';
-
-/**
- * For details on how to instantiate the client, see 'examples/client/client.ts'
- */
-const client = sipgateIO({ username, password });
-
-const settingsModule = createSettingsModule(client);
-
-settingsModule.setIncomingUrl(serverAddress);
+const serverAddress =
+	process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS || 'https://example.com:8080';
 
 const webhookModule = createWebhookModule();
 webhookModule
@@ -26,7 +11,12 @@ webhookModule
 		serverAddress,
 	})
 	.then(webhookServer => {
-		console.log(`Server running at ${serverAddress}\nReady for calls 📞`);
+		console.log(
+			`Server running at ${serverAddress}\n` +
+				'Please set this URL for incoming calls at https://console.sipgate.com/webhooks/urls\n' +
+				"ProTip: To see how to do that automatically, check out the example at 'examples/settings/settings_set_url_incoming.ts'\n" +
+				'Ready for calls 📞'
+		);
 		webhookServer.onNewCall(newCallEvent => {
 			console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
 		});
@@ -36,6 +26,6 @@ webhookModule
 		});
 
 		webhookServer.onHangUp(hangUpEvent => {
-			console.log(`The call was hung up with reason ${hangUpEvent.cause}`);
+			console.log(`The call was hung up with cause ${hangUpEvent.cause}`);
 		});
 	});
