@@ -21,7 +21,11 @@
 		"sms:send:extension": "ts-node ./sms/sms_send_extension.ts",
 		"sms:send:extension:timed": "ts-node ./sms/sms_send_extension_timed.ts",
 		"sms:send:phone": "ts-node ./sms/sms_send_phone.ts",
-		"webhook:gather": "ts-node ./webhook/webhook_gather.ts"
+		"webhook:gather": "ts-node ./webhook/webhook_gather.ts",
+		"webhook:log:incoming:calls": "ts-node ./webhook/webhook_log_incoming_calls.ts",
+		"webhook:play:audio": "ts-node ./webhook/webhook_play_audio.ts",
+		"webhook:reject": "ts-node ./webhook/webhook_reject.ts",
+		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts"
 	},
 	"repository": {
 		"type": "git",
