@@ -12,6 +12,12 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
 - [Fax](#fax)
   - [Sending Fax](#sending-fax)
 - [Webhooks](#webhooks)
+  - [Log Incoming Calls](#log-incoming-calls)
+  - [Reject Calls](#reject-calls)
+  - [Send Calls to Voicemail](#send-calls-to-voicemail)
+  - [Play Audio](#play-audio)
+  - [Gather DTMF Tones](#gather-dtmf-tones)
+- [Webhooks Settings](#webhooks-settings)
   - [Debug Log for Webhooks](#debug-log-for-webhooks)
   - [Set Incoming Webhook-Url](#set-incoming-webhook-url)
   - [Set Outgoing Webhook-Url](#set-outgoing-webhook-url)
@@ -70,6 +76,33 @@ Send a Fax which is provided as pdf File:
 `npm run fax`
 
 # Webhooks
+
+## Log Incoming Calls
+
+Log all event types to the console:
+`npm run webhook:log:incoming:calls`
+
+## Reject Calls
+
+Reject calls (e.g. outside of business hours):
+`npm run webhook:reject`
+
+## Send Calls to Voicemail
+
+Send calls to voicemail:
+`npm run webhook:voicemail`
+
+## Play Audio
+
+Play an announcement to a caller:
+`npm run webhook:play:audio`
+
+## Gather DTMF Tones
+
+Get DTMF input from a caller and perform different actions (e.g. redirect or hang up calls) in response:
+`npm run webhook:gather`
+
+# Webhooks Settings
 
 ## Debug Log for Webhooks
 
