@@ -28,6 +28,11 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Sending a SMS by extension](#sending-a-sms-by-extension)
   - [Sending a timed SMS by extension](#sending-a-timed-sms-by-extension)
   - [Sending a timed SMS by phone](#sending-a-timed-sms-by-phone)
+- [History](#history)
+  - [Fetch all](#fetch-all)
+  - [Fetch by id](#fetch-by-id)
+  - [Delete by id](#delete-by-id)
+  - [Delete by list of ids](#delete-by-list-of-ids)
 
 # Call
 
@@ -150,3 +155,25 @@ You can send a timed SMS by passing an Extension and a number as target:
 
 You can send a SMS by passing a phonenumber and a number as target:  
 `npm run sms:send:phone`
+
+# History
+
+## Fetch all
+
+You can fetch multiple history entries:  
+`npm run history:fetch:all`
+
+## Fetch by id
+
+You can fetch a specific history entry:  
+`npm run history:fetch:by:id`
+
+## Delete by id
+
+You can delete a specific history entry:  
+`npm run history:delete:by:id`
+
+## Delete by list of ids
+
+You can delete multiple history entries:  
+`npm run history:delete:by:list:of:ids`
