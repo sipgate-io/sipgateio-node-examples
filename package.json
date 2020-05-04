@@ -25,7 +25,11 @@
 		"webhook:log:incoming:calls": "ts-node ./webhook/webhook_log_incoming_calls.ts",
 		"webhook:play:audio": "ts-node ./webhook/webhook_play_audio.ts",
 		"webhook:reject": "ts-node ./webhook/webhook_reject.ts",
-		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts"
+		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts",
+		"history:fetch:all": "ts-node ./history/history_fetch_all.ts",
+		"history:fetch:by:id": "ts-node ./history/history_fetch_by_id.ts",
+		"history:delete:by:id": "ts-node ./history/history_delete_by_id.ts",
+		"history:delete:by:list:of:ids": "ts-node ./history/history_delete_by_list_of_ids.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -38,7 +42,7 @@
 	},
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
-		"sipgateio": "^1.3.0",
+		"sipgateio": "^1.5.1",
 		"typescript": "^3.7.5",
 		"ts-node": "^8.6.2"
 	},
