@@ -1,4 +1,6 @@
+import * as dotenv from 'dotenv';
 import { sipgateIO } from 'sipgateio';
+dotenv.config();
 
 /**
  * Option 1: Creating the Client with Basic Auth credentials (not recommended)

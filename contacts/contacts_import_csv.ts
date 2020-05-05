@@ -1,5 +1,7 @@
+import * as dotenv from 'dotenv';
 import { createContactsModule, sipgateIO } from 'sipgateio';
 import { readFileSync } from 'fs';
+dotenv.config();
 
 const filePath = './contacts/contacts.csv';
 const fileContent = readFileSync(filePath).toString();

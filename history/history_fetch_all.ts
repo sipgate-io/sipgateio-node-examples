@@ -1,4 +1,6 @@
+import * as dotenv from 'dotenv';
 import { createHistoryModule, sipgateIO } from 'sipgateio';
+dotenv.config();
 
 const username = process.env.SIPGATE_USERNAME || '';
 const password = process.env.SIPGATE_PASSWORD || '';

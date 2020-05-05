@@ -1,6 +1,8 @@
+import * as dotenv from 'dotenv';
 import * as fs from 'fs';
 import * as path from 'path';
 import { createFaxModule, sipgateIO } from 'sipgateio';
+dotenv.config();
 
 (async (): Promise<void> => {
 	const password = process.env.SIPGATE_PASSWORD || '';

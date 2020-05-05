@@ -42,9 +42,11 @@
 	},
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
+		"@types/dotenv": "^8.2.0",
+		"dotenv": "^8.2.0",
 		"sipgateio": "^1.5.1",
-		"typescript": "^3.7.5",
-		"ts-node": "^8.6.2"
+		"ts-node": "^8.6.2",
+		"typescript": "^3.7.5"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^2.9.0",

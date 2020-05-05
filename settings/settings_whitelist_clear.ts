@@ -1,4 +1,6 @@
+import * as dotenv from 'dotenv';
 import { createSettingsModule, sipgateIO } from 'sipgateio';
+dotenv.config();
 
 (async (): Promise<void> => {
 	const username = process.env.SIPGATE_USERNAME || '';

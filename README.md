@@ -1,5 +1,6 @@
 Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgateio-node):
 
+- [Setup](#setup)
 - [Call](#call)
   - [Performing a Call](#performing-a-call)
 - [Contacts](#contacts)
@@ -33,6 +34,10 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Fetch by id](#fetch-by-id)
   - [Delete by id](#delete-by-id)
   - [Delete by list of ids](#delete-by-list-of-ids)
+
+# Setup
+
+To run all examples fluently please copy the `.env.example` and name it to `.env`. After that configure the placeholders to match your preferred account settings.
 
 # Call
 

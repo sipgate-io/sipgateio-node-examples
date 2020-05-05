@@ -1,5 +1,7 @@
+import * as dotenv from 'dotenv';
 import { createContactsModule, sipgateIO } from 'sipgateio';
 import { vcardExample } from './vcard';
+dotenv.config();
 
 const password = process.env.SIPGATE_PASSWORD || '';
 const username = process.env.SIPGATE_USERNAME || '';

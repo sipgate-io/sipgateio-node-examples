@@ -1,4 +1,6 @@
+import * as dotenv from 'dotenv';
 import { createWebhookModule } from 'sipgateio';
+dotenv.config();
 
 const port = 8080;
 const serverAddress =
