@@ -44,7 +44,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^8.2.0",
-		"sipgateio": "^1.5.1",
+		"sipgateio": "^1.6.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.7.5"
 	},
