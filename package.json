@@ -29,7 +29,15 @@
 		"history:fetch:all": "ts-node ./history/history_fetch_all.ts",
 		"history:fetch:by:id": "ts-node ./history/history_fetch_by_id.ts",
 		"history:delete:by:id": "ts-node ./history/history_delete_by_id.ts",
-		"history:delete:by:list:of:ids": "ts-node ./history/history_delete_by_list_of_ids.ts"
+		"history:delete:by:list:of:ids": "ts-node ./history/history_delete_by_list_of_ids.ts",
+		"rtcm:announce": "ts-node ./rtcm/rtcm_announce.ts",
+		"rtcm:hangup": "ts-node ./rtcm/rtcm_hangup.ts",
+		"rtcm:hold": "ts-node ./rtcm/rtcm_hold.ts",
+		"rtcm:list:all:established:calls": "ts-node ./rtcm/rtcm_list_all_established_calls.ts",
+		"rtcm:mute": "ts-node ./rtcm/rtcm_mute.ts",
+		"rtcm:record": "ts-node ./rtcm/rtcm_record.ts",
+		"rtcm:send:dtmf": "ts-node ./rtcm/rtcm_send_dtmf.ts",
+		"rtcm:transfer": "ts-node ./rtcm/rtcm_transfer.ts"
 	},
 	"repository": {
 		"type": "git",
