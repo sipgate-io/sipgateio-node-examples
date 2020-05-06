@@ -34,6 +34,15 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Fetch by id](#fetch-by-id)
   - [Delete by id](#delete-by-id)
   - [Delete by list of ids](#delete-by-list-of-ids)
+- [Real Time Call Manipulation](#real-time-call-manipulation)
+  - [List all currently established calls](#list-all-currently-established-calls)
+  - [Play announcements](#play-announcements)
+  - [Hold running calls](#hold-running-calls)
+  - [Mute yourself in a present call](#mute-yourself-in-a-present-call)
+  - [Start a recording](#start-a-recording)
+  - [Sending dtmf sequences](#sending-dtmf-sequences)
+  - [Transferring a call](#transferring-a-call)
+  - [Hangup a call](#hangup-a-call)
 
 # Setup
 
@@ -182,3 +191,37 @@ You can delete a specific history entry:
 
 You can delete multiple history entries:  
 `npm run history:delete:by:list:of:ids`
+
+# Real Time Call Manipulation
+
+## List all currently established calls
+
+You can list all currently established calls by running `npm run rtcm:list:all:established:calls`
+
+## Play announcements
+
+You can play an announcement by running `npm run rtcm:announce`
+
+## Hold running calls
+
+A call can be hold by executing `npm run rtcm:hold`
+
+## Mute yourself in a present call
+
+You can mute yourself in a present call by running the following npm script: `npm run rtcm:mute`
+
+## Start a recording
+
+A recording can be started with the following script: `npm run rtcm:record`
+
+## Sending dtmf sequences
+
+You can send any dtmf sequence by running `npm run rtcm:send:dtmf`
+
+## Transferring a call
+
+Transferring a call can be achieved by running this npm command: `npm run rtcm:transfer`
+
+## Hangup a call
+
+A call can be hungup by running: `npm run rtcm:hangup`
