@@ -18,6 +18,7 @@
 		"settings:whitelist:clear": "ts-node ./settings/settings_whitelist_clear.ts",
 		"settings:whitelist:disable": "ts-node ./settings/settings_whitelist_disable.ts",
 		"settings:whitelist:set": "ts-node ./settings/settings_whitelist_set.ts",
+		"settings:get:current": "ts-node ./settings/settings_get_current.ts",
 		"sms:send:extension": "ts-node ./sms/sms_send_extension.ts",
 		"sms:send:extension:timed": "ts-node ./sms/sms_send_extension_timed.ts",
 		"sms:send:phone": "ts-node ./sms/sms_send_phone.ts",
@@ -52,7 +53,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^8.2.0",
-		"sipgateio": "^1.6.0",
+		"sipgateio": "^1.7.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.7.5"
 	},
