@@ -31,6 +31,8 @@
 		"history:fetch:by:id": "ts-node ./history/history_fetch_by_id.ts",
 		"history:delete:by:id": "ts-node ./history/history_delete_by_id.ts",
 		"history:delete:by:list:of:ids": "ts-node ./history/history_delete_by_list_of_ids.ts",
+		"history:batch:update:events": "ts-node ./history/history_batch_update_events.ts",
+		"history:export:as:csv:string": "ts-node ./history/history_export_as_csv_string.ts",
 		"rtcm:announce": "ts-node ./rtcm/rtcm_announce.ts",
 		"rtcm:hangup": "ts-node ./rtcm/rtcm_hangup.ts",
 		"rtcm:hold": "ts-node ./rtcm/rtcm_hold.ts",
@@ -53,7 +55,7 @@
 	"dependencies": {
 		"@types/dotenv": "^8.2.0",
 		"dotenv": "^8.2.0",
-		"sipgateio": "^1.7.0",
+		"sipgateio": "^1.8.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.7.5"
 	},
