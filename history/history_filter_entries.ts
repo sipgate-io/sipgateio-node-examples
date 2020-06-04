@@ -1,6 +1,7 @@
 import * as dotenv from 'dotenv';
-import { HistoryEntryType } from 'sipgateio/dist/history';
+import { Direction, HistoryEntryType } from 'sipgateio/dist/history';
 import { createHistoryModule, sipgateIO } from 'sipgateio';
+
 dotenv.config();
 
 const username = process.env.SIPGATE_USERNAME || '';
@@ -13,6 +14,7 @@ const historyModule = createHistoryModule(client);
 
 historyModule
 	.fetchAll({
+		directions: [Direction.INCOMING],
 		types: [HistoryEntryType.SMS],
 	})
 	.then(console.log)
