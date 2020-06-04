@@ -28,6 +28,7 @@
 		"webhook:reject": "ts-node ./webhook/webhook_reject.ts",
 		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts",
 		"history:fetch:all": "ts-node ./history/history_fetch_all.ts",
+		"history:filter:entries": "ts-node ./history/history_filter_entries.ts",
 		"history:fetch:by:id": "ts-node ./history/history_fetch_by_id.ts",
 		"history:delete:by:id": "ts-node ./history/history_delete_by_id.ts",
 		"history:delete:by:list:of:ids": "ts-node ./history/history_delete_by_list_of_ids.ts",
