@@ -12,7 +12,7 @@ const client = sipgateIO({ username, password });
 const contacts = createContactsModule(client);
 
 contacts
-	.import(
+	.create(
 		{
 			firstname: 'John',
 			lastname: 'Doe',
