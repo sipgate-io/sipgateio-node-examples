@@ -30,7 +30,7 @@ contacts
 				email: 'John.Doe@example.org',
 				type: ['HOME'],
 			},
-			organization: ['example', 'org'],
+			organization: [['example'], ['org']],
 		},
 		'PRIVATE'
 	)
