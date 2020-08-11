@@ -20,6 +20,8 @@ historyModule
 	.fetchAll({
 		directions: [HistoryDirection.INCOMING],
 		types: [HistoryEntryType.SMS],
+		startDate: new Date("08-11-2020"),
+		endDate: new Date(),
 	})
 	.then(console.log)
 	.catch(console.error);
