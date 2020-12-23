@@ -25,6 +25,7 @@
 		"webhook:gather": "ts-node ./webhook/webhook_gather.ts",
 		"webhook:log:incoming:calls": "ts-node ./webhook/webhook_log_incoming_calls.ts",
 		"webhook:play:audio": "ts-node ./webhook/webhook_play_audio.ts",
+		"webhook:redirect": "ts-node ./webhook/webhook_redirect_call.ts",
 		"webhook:reject": "ts-node ./webhook/webhook_reject.ts",
 		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts",
 		"history:fetch:all": "ts-node ./history/history_fetch_all.ts",
