@@ -21,7 +21,7 @@ webhookModule
 		);
 
 		webhookServer.onNewCall(newCallEvent => {
-			if (newCallEvent['user'].includes('voicemail')) {
+			if (newCallEvent.users.includes('voicemail')) {
 				return;
 			}
 
