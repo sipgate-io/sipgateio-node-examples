@@ -22,7 +22,7 @@ webhookModule
 
 		webhookServer.onNewCall(newCallEvent => {
 			console.log(
-				`New call from ${newCallEvent.from} to ${newCallEvent.to} (${newCallEvent['user']})`
+				`New call from ${newCallEvent.from} to ${newCallEvent.to} (${newCallEvent.users})`
 			);
 
 			return WebhookResponse.sendToVoicemail();
