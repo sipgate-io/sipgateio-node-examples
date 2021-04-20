@@ -2,13 +2,13 @@ import * as dotenv from 'dotenv';
 import { createSMSModule, sipgateIO } from 'sipgateio';
 dotenv.config();
 
-const username = process.env.SIPGATE_USERNAME || '';
-const password = process.env.SIPGATE_PASSWORD || '';
+const tokenId = process.env.SIPGATE_TOKEN_ID || '';
+const token = process.env.SIPGATE_TOKEN || '';
 
 /**
  * For details on how to instantiate the client, see 'examples/client/client.ts'
  */
-const client = sipgateIO({ username, password });
+const client = sipgateIO({ username: tokenId, password: token });
 
 const to = process.env.SIPGATE_SMS_RECIPIENT || '';
 const from = process.env.SIPGATE_SMS_FROM || '';
