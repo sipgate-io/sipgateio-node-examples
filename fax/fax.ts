@@ -5,19 +5,19 @@ import { createFaxModule, sipgateIO } from 'sipgateio';
 dotenv.config();
 
 (async (): Promise<void> => {
-	const password = process.env.SIPGATE_PASSWORD || '';
-	const username = process.env.SIPGATE_USERNAME || '';
+	const tokenId = process.env.SIPGATE_TOKEN_ID || '';
+	const token = process.env.SIPGATE_TOKEN || '';
 
 	/**
 	 *
 	 * For details on how to instantiate the client, see 'examples/client/client.ts'
 	 */
-	const client = sipgateIO({ username, password });
+	 const client = sipgateIO({ username: tokenId, password: token });
 
 	const faxlineId = process.env.SIPGATE_FAX_EXTENSION || '';
 	const to = process.env.SIPGATE_FAX_RECIPIENT || '';
 
-	const filePath = './testpage.pdf';
+	const filePath = './fax/testpage.pdf';
 	const { name: filename } = path.parse(path.basename(filePath));
 	const fileContent = fs.readFileSync(filePath);
 
