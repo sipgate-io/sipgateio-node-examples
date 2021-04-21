@@ -8,8 +8,8 @@ dotenv.config();
  * Reference: https://www.sipgate.io/rest-api/authentication#personalAccessToken
  */
 const personalAccessTokenAuthClient = sipgateIO({
-	username: 'YOUR_TOKEN_ID',
-	password: 'YOUR_TOKEN',
+	tokenId: 'YOUR_TOKEN_ID',
+	token: 'YOUR_TOKEN',
 });
 
 console.log(personalAccessTokenAuthClient);

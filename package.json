@@ -57,7 +57,7 @@
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
 		"dotenv": "^8.2.0",
-		"sipgateio": "^2.1.6",
+		"sipgateio": "^2.2.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.7.5"
 	},

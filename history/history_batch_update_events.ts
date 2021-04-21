@@ -2,9 +2,12 @@ import * as dotenv from 'dotenv';
 import { createHistoryModule, sipgateIO } from 'sipgateio';
 dotenv.config();
 
+const personalAccessTokenId = process.env.SIPGATE_TOKEN_ID || '';
+const personalAccessToken = process.env.SIPGATE_TOKEN || '';
+
 const client = sipgateIO({
-	username: process.env.SIPGATE_TOKEN_ID || '',
-	password: process.env.SIPGATE_TOKEN || '',
+	tokenId: personalAccessTokenId,
+	token: personalAccessToken,
 });
 
 (async (): Promise<void> => {
@@ -12,7 +15,7 @@ const client = sipgateIO({
 
 	const entries = await history.fetchAll({}, { offset: 0, limit: 50 });
 
-	history.batchUpdateEvents(entries, (entry) => {
+	history.batchUpdateEvents(entries, entry => {
 		if (entry.type === 'SMS') {
 			return {
 				starred: true,
