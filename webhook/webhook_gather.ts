@@ -30,7 +30,8 @@ webhookModule
 			return WebhookResponse.gatherDTMF({
 				maxDigits: 1,
 				timeout: 5000,
-				announcement: 'https://static.sipgate.com/examples/wav/example.wav',
+				announcement:
+					'https://github.com/sipgate-io/sipgateio-node-examples/blob/main/static/example.wav?raw=true',
 			});
 		});
 
