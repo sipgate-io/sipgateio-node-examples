@@ -4,16 +4,25 @@ import { WebhookResponse, createWebhookModule } from 'sipgateio';
 dotenv.config();
 
 const port = 8080;
-const serverAddress =
-	process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS || 'https://example.com:8080';
+
+if (!process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS) {
+	console.error(
+		'ERROR: You need to set a server address for the followup webhook events!\n'
+	);
+	process.exit();
+}
+
+const serverAddress = process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS;
+const hostname = process.env.HOSTNAME || 'localhost';
 
 const webhookModule = createWebhookModule();
 webhookModule
 	.createServer({
 		port,
 		serverAddress,
+		hostname,
 	})
-	.then(webhookServer => {
+	.then((webhookServer) => {
 		console.log(
 			`Server running at ${serverAddress}\n` +
 				'Please set this URL for incoming calls at https://console.sipgate.com/webhooks/urls\n' +
@@ -21,7 +30,7 @@ webhookModule
 				'Ready for calls 📞'
 		);
 
-		webhookServer.onNewCall(newCallEvent => {
+		webhookServer.onNewCall((newCallEvent) => {
 			const businessHours = { begin: 8, end: 16 };
 			const now = new Date().getHours();
 
