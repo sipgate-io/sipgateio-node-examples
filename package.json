@@ -5,6 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"call": "ts-node ./call/call.ts",
+		"contacts:delete:all:private": "ts-node ./contacts/contacts_delete_all_private.ts",
+		"contacts:delete:all:shared": "ts-node ./contacts/contacts_delete_all_shared.ts",
+		"contacts:delete:by:id": "ts-node ./contacts/contacts_delete_by_id.ts",
 		"contacts:import:vcard:private": "ts-node ./contacts/contacts_import_vcard_private.ts",
 		"contacts:import:vcard:shared": "ts-node ./contacts/contacts_import_vcard_shared.ts",
 		"contacts:import:csv": "ts-node ./contacts/contacts_import_csv.ts",
@@ -56,24 +59,24 @@
 	},
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
-		"dotenv": "^8.2.0",
-		"sipgateio": "^2.2.0",
+		"dotenv": "^8.6.0",
+		"sipgateio": "^2.3.0",
 		"ts-node": "^8.6.2",
-		"typescript": "^3.7.5"
+		"typescript": "^3.9.9"
 	},
 	"devDependencies": {
 		"@types/dotenv": "^8.2.0",
-		"@types/node": "^14.14.20",
+		"@types/node": "^14.17.2",
 		"@typescript-eslint/eslint-plugin": "^2.9.0",
 		"@typescript-eslint/parser": "^2.9.0",
 		"eslint": "^6.7.1",
 		"eslint-config-prettier": "^6.7.0",
 		"eslint-config-standard": "^14.1.0",
 		"eslint-plugin-autofix": "0.0.9",
-		"eslint-plugin-import": "^2.18.2",
+		"eslint-plugin-import": "^2.23.4",
 		"eslint-plugin-node": "^10.0.0",
-		"eslint-plugin-prettier": "^3.3.1",
-		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-promise": "^4.3.1",
 		"eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
 		"eslint-plugin-standard": "^4.1.0",
 		"prettier": "^1.19.1"

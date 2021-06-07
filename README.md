@@ -4,6 +4,9 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
 - [Call](#call)
   - [Performing a Call](#performing-a-call)
 - [Contacts](#contacts)
+  - [Delete Contact by id](#delete-contact-by-id)
+  - [Delete all Shared Contacts](#delete-all-shared-contacts)
+  - [Delete all Private Contacts](#delete-all-private-contacts)
   - [Import Contacts from Vcard as Shared](#import-contacts-from-vcard-as-shared)
   - [Import Contacts from Vcard as Private](#import-contacts-from-vcard-as-private)
   - [Import Contacts from Object](#import-contacts-from-object)
@@ -56,6 +59,21 @@ Perform a call to a phone-number:
 `npm run call`
 
 # Contacts
+
+## Delete Contact by id
+
+Delete a contact from your sipgate contacts by id.  
+`npm run contacts:delete:by:id`
+
+## Delete all Shared Contacts
+
+Delete all contacts with `SHARED` scope.  
+`npm run contacts:delete:all:shared`
+
+## Delete all Private Contacts
+
+Delete all contacts with `PRIVATE` scope.  
+`npm run contacts:delete:all:private`
 
 ## Import Contacts from Vcard as Shared
 
