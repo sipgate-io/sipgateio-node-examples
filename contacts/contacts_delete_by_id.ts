@@ -4,7 +4,7 @@ dotenv.config();
 
 const personalAccessTokenId = process.env.SIPGATE_TOKEN_ID || '';
 const personalAccessToken = process.env.SIPGATE_TOKEN || '';
-const contactId = '86a975d8-c772-11eb-8031-57aa4fd97b58';
+const contactId = '<CONTACT-ID>';
 
 /**
  * For details on how to instantiate the client, see 'examples/client/client.ts'

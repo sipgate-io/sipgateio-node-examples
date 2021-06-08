@@ -35,10 +35,10 @@ contacts
 			},
 			organization: [['example'], ['org']],
 		},
-		'PRIVATE'
+		'PRIVATE' //PRIVATE, SHARED
 	)
 	.then(() => {
-		console.log('Contact imported successfully');
+		console.log('Contact created successfully');
 	})
 	.catch(error => {
 		console.error(error.message);
