@@ -21,22 +21,22 @@ webhookModule
 		serverAddress,
 		hostname,
 	})
-	.then((webhookServer) => {
+	.then(webhookServer => {
 		console.log(
 			`Server running at ${serverAddress}\n` +
 				'Please set this URL for incoming calls at https://console.sipgate.com/webhooks/urls\n' +
 				"ProTip: To see how to do that automatically, check out the example at 'examples/settings/settings_set_url_incoming.ts'\n" +
 				'Ready for calls 📞'
 		);
-		webhookServer.onNewCall((newCallEvent) => {
+		webhookServer.onNewCall(newCallEvent => {
 			console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
 		});
 
-		webhookServer.onAnswer((answerEvent) => {
+		webhookServer.onAnswer(answerEvent => {
 			console.log(`The call was anwered by ${answerEvent.user}`);
 		});
 
-		webhookServer.onHangUp((hangUpEvent) => {
+		webhookServer.onHangUp(hangUpEvent => {
 			console.log(`The call was hung up with cause ${hangUpEvent.cause}`);
 		});
 	});

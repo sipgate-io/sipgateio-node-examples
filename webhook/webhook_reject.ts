@@ -22,7 +22,7 @@ webhookModule
 		serverAddress,
 		hostname,
 	})
-	.then((webhookServer) => {
+	.then(webhookServer => {
 		console.log(
 			`Server running at ${serverAddress}\n` +
 				'Please set this URL for incoming calls at https://console.sipgate.com/webhooks/urls\n' +
@@ -30,7 +30,7 @@ webhookModule
 				'Ready for calls 📞'
 		);
 
-		webhookServer.onNewCall((newCallEvent) => {
+		webhookServer.onNewCall(newCallEvent => {
 			const businessHours = { begin: 8, end: 16 };
 			const now = new Date().getHours();
 

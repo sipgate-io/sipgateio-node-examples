@@ -29,7 +29,7 @@ webhookModule
 				'Ready for calls 📞'
 		);
 
-		webhookServer.onNewCall((newCallEvent) => {
+		webhookServer.onNewCall(newCallEvent => {
 			console.log(
 				`New call from ${newCallEvent.from} to ${newCallEvent.to} (${newCallEvent.users})`
 			);
@@ -37,11 +37,11 @@ webhookModule
 			return WebhookResponse.sendToVoicemail();
 		});
 
-		webhookServer.onAnswer((answerEvent) => {
+		webhookServer.onAnswer(answerEvent => {
 			console.log(`The call was answered by ${answerEvent.user}`);
 		});
 
-		webhookServer.onHangUp((hangUpEvent) => {
+		webhookServer.onHangUp(hangUpEvent => {
 			console.log(`The call has been hung up with cause ${hangUpEvent.cause}`);
 		});
 	});

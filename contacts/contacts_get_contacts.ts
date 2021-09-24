@@ -16,7 +16,7 @@ const contacts = createContactsModule(client);
 
 contacts
 	.get('PRIVATE') //PRIVATE, SHARED, INTERNAL
-	.then((response) => {
+	.then(response => {
 		console.log(response);
 	})
 	.catch(console.error);

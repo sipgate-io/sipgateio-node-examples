@@ -20,7 +20,7 @@ webhookModule
 		serverAddress,
 		hostname,
 	})
-	.then((webhookServer) => {
+	.then(webhookServer => {
 		console.log(
 			`Server running at ${serverAddress}\n` +
 				'Please set this URL for incoming calls at https://console.sipgate.com/webhooks/urls\n' +
@@ -28,13 +28,12 @@ webhookModule
 				'Ready for calls 📞'
 		);
 
-		webhookServer.onNewCall((newCallEvent) => {
+		webhookServer.onNewCall(newCallEvent => {
 			if (newCallEvent.users.includes('voicemail')) {
 				return;
 			}
 
 			console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
-
 			return WebhookResponse.gatherDTMF({
 				maxDigits: 1,
 				timeout: 5000,
@@ -43,7 +42,7 @@ webhookModule
 			});
 		});
 
-		webhookServer.onData((dataEvent) => {
+		webhookServer.onData(dataEvent => {
 			const selection = dataEvent.dtmf;
 
 			console.log(`The caller pressed ${selection ? selection : 'nothing'}`);
@@ -74,11 +73,11 @@ webhookModule
 			}
 		});
 
-		webhookServer.onAnswer((answerEvent) => {
+		webhookServer.onAnswer(answerEvent => {
 			console.log(`The call was answered by ${answerEvent.user}`);
 		});
 
-		webhookServer.onHangUp((hangUpEvent) => {
+		webhookServer.onHangUp(hangUpEvent => {
 			console.log(`The call has been hung up with cause ${hangUpEvent.cause}`);
 		});
 	});
