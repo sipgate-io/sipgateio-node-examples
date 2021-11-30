@@ -15,6 +15,8 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Export Contacts as multiple VCards](#export-contacts-as-multiple-vcards)
 - [Fax](#fax)
   - [Sending Fax](#sending-fax)
+- [Fluent API](#fluent-api)
+  - [Fluent Webhook Server](#fluent-webhook-server)
 - [Webhooks](#webhooks)
   - [Log Incoming Calls](#log-incoming-calls)
   - [Reject Calls](#reject-calls)
@@ -111,6 +113,13 @@ Export Contacts from your sipgate Account wiht a specific `SCOPE` to a List of V
 
 Send a Fax which is provided as pdf File:  
 `npm run fax`
+
+# Fluent APIs
+
+## Fluent Webhook Server
+
+Start a webhook receiver which listens to all available call events.
+`npm run fluent:webhook`.
 
 # Webhooks
 
