@@ -16,6 +16,7 @@
 		"contacts:export:csv": "ts-node ./contacts/contacts_export_csv.ts",
 		"contacts:export:vcards": "ts-node ./contacts/contacts_export_vcards.ts",
 		"fax": "ts-node ./fax/fax.ts",
+		"fluent:webhook": "ts-node ./fluent/webhook.ts",
 		"settings:set:log": "ts-node ./settings/settings_set_log.ts",
 		"settings:set:url:incoming": "ts-node ./settings/settings_set_url_incoming.ts",
 		"settings:set:url:outgoing": "ts-node ./settings/settings_set_url_outgoing.ts",
