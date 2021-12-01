@@ -16,11 +16,11 @@ const serverAddress = process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS;
 new FluentWebhookServer()
 	.setServerPort(port)
 	.setServerAddress(serverAddress)
-	.setOnNewCallListener(newCallEvent => {
-		console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
-	})
 	.setOnAnswerListener(answerEvent => {
 		console.log(`Answer from: ${answerEvent.from}`);
+	})
+	.setOnNewCallListener(newCallEvent => {
+		console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
 	})
 	.setOnHangupListener(hangupEvent => {
 		console.log(`Hangup with cause: ${hangupEvent.cause}`);
