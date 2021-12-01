@@ -19,7 +19,13 @@ new FluentWebhookServer()
 	.setOnNewCallListener(newCallEvent => {
 		console.log(`New call from ${newCallEvent.from} to ${newCallEvent.to}`);
 	})
+	.setOnAnswerListener(answerEvent => {
+		console.log(`Answer from: ${answerEvent.from}`);
+	})
 	.setOnHangupListener(hangupEvent => {
-		console.log(`hangup with cause: ${hangupEvent.cause}`);
+		console.log(`Hangup with cause: ${hangupEvent.cause}`);
+	})
+	.setOnDataListener(dataEvent => {
+		console.log(`Data from Call: ${dataEvent.originalCallId}`);
 	})
 	.startServer();
