@@ -29,3 +29,4 @@ new FluentWebhookServer()
 		console.log(`Data from Call: ${dataEvent.originalCallId}`);
 	})
 	.startServer();
+console.log('Server started!');
