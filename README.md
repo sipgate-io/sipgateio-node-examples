@@ -12,6 +12,7 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Import Contacts from Object](#import-contacts-from-object)
   - [Import Contacts from CSV](#import-contacts-from-csv)
   - [Export Contacts as CSV](#export-contacts-as-csv)
+  - [Export Contacts as JSON](#export-contacts-as-JSON)
   - [Export Contacts as multiple VCards](#export-contacts-as-multiple-vcards)
 - [Fax](#fax)
   - [Sending Fax](#sending-fax)

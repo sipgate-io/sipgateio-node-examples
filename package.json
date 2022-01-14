@@ -14,6 +14,7 @@
 		"contacts:import:vcard:shared": "ts-node ./contacts/contacts_import_vcard_shared.ts",
 		"contacts:import:csv": "ts-node ./contacts/contacts_import_csv.ts",
 		"contacts:export:csv": "ts-node ./contacts/contacts_export_csv.ts",
+		"contacts:export:json": "ts-node ./contacts/contacts_export_json.ts",
 		"contacts:export:vcards": "ts-node ./contacts/contacts_export_vcards.ts",
 		"fax": "ts-node ./fax/fax.ts",
 		"fluent:webhook": "ts-node ./fluent/webhook.ts",
@@ -64,7 +65,7 @@
 		"dotenv": "^8.6.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.9.9",
-		"sipgateio": "^2.6.0"
+		"sipgateio": "file:../sipgateio-node"
 	},
 	"devDependencies": {
 		"@types/dotenv": "^8.2.0",
