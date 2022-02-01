@@ -22,3 +22,13 @@ contacts
 	.catch(error => {
 		console.error(error.message);
 	});
+
+contacts
+	.paginatedExportAsCsv('PRIVATE', ',', { offset: 0, limit: 10 })
+	.then(data => {
+		console.log(data.response);
+		console.log(data.hasMore);
+	})
+	.catch(error => {
+		console.error(error.message);
+	});
