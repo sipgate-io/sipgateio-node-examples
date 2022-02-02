@@ -19,3 +19,11 @@ contacts.exportAsVCards('INTERNAL').then(vCards => {
 		console.log(`${vcard}\n`);
 	});
 });
+
+contacts
+	.paginatedExportAsVCards('ALL', { offset: 0, limit: 10 })
+	.then(vCards => {
+		vCards.response.map(vcard => {
+			console.log(`${vcard}\n`);
+		});
+	});
