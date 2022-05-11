@@ -16,13 +16,14 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
   - [Export Contacts as multiple VCards](#export-contacts-as-multiple-vcards)
 - [Fax](#fax)
   - [Sending Fax](#sending-fax)
-- [Fluent API](#fluent-api)
+- [Fluent APIs](#fluent-apis)
   - [Fluent Webhook Server](#fluent-webhook-server)
 - [Webhooks](#webhooks)
   - [Log Incoming Calls](#log-incoming-calls)
   - [Reject Calls](#reject-calls)
   - [Send Calls to Voicemail](#send-calls-to-voicemail)
   - [Play Audio](#play-audio)
+  - [Play Audio and HangUp](#play-audio-and-hangup)
   - [Gather DTMF Tones](#gather-dtmf-tones)
 - [Webhooks Settings](#webhooks-settings)
   - [Debug Log for Webhooks](#debug-log-for-webhooks)
@@ -143,6 +144,11 @@ Send calls to voicemail:
 
 Play an announcement to a caller:
 `npm run webhook:play:audio`
+
+## Play Audio and HangUp
+
+Play an announcement to a caller and hangup afterwards:
+`npm run webhook:play:audio:and:hangup`
 
 ## Gather DTMF Tones
 

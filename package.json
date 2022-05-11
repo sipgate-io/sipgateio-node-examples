@@ -31,6 +31,7 @@
 		"webhook:gather": "ts-node ./webhook/webhook_gather.ts",
 		"webhook:log:incoming:calls": "ts-node ./webhook/webhook_log_incoming_calls.ts",
 		"webhook:play:audio": "ts-node ./webhook/webhook_play_audio.ts",
+		"webhook:play:audio:and:hangup": "ts-node ./webhook/webhook_play_audio_and_hangup.ts",
 		"webhook:redirect": "ts-node ./webhook/webhook_redirect_call.ts",
 		"webhook:reject": "ts-node ./webhook/webhook_reject.ts",
 		"webhook:voicemail": "ts-node ./webhook/webhook_voicemail.ts",
@@ -63,9 +64,9 @@
 	"homepage": "https://github.com/sipgate-io/sipgateio-node-examples#readme",
 	"dependencies": {
 		"dotenv": "^8.6.0",
+		"sipgateio": "^2.8.0",
 		"ts-node": "^8.6.2",
-		"typescript": "^3.9.9",
-		"sipgateio": "^2.8.0"
+		"typescript": "^3.9.9"
 	},
 	"devDependencies": {
 		"@types/dotenv": "^8.2.0",
