@@ -65,7 +65,7 @@
 		"dotenv": "^8.6.0",
 		"ts-node": "^8.6.2",
 		"typescript": "^3.9.9",
-		"sipgateio": "file:../sipgateio-node"
+		"sipgateio": "^2.8.0"
 	},
 	"devDependencies": {
 		"@types/dotenv": "^8.2.0",
