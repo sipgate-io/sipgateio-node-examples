@@ -15,9 +15,9 @@ const client = sipgateIO({
 const contacts = createContactsModule(client);
 
 contacts
-	.exportAsJSON('INTERNAL')
+	.paginatedExportAsJSON('PRIVATE', { offset: 0, limit: 10 })
 	.then(data => {
-		console.log(data);
+		console.log(data.response);
 	})
 	.catch(error => {
 		console.error(error.message);

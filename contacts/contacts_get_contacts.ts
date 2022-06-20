@@ -20,3 +20,10 @@ contacts
 		console.log(response);
 	})
 	.catch(console.error);
+
+contacts
+	.paginatedGet('PRIVATE', { offset: 0, limit: 2 })
+	.then(data => {
+		console.log(data);
+	})
+	.catch(console.error);
