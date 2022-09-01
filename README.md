@@ -3,6 +3,8 @@ Examples for the [sipgate-io node library](https://github.com/sipgate-io/sipgate
 - [Setup](#setup)
 - [Call](#call)
   - [Performing a Call](#performing-a-call)
+- [IDs](#ids)
+  - [List common IDs](#list-common-ids)
 - [Contacts](#contacts)
   - [Delete Contact by id](#delete-contact-by-id)
   - [Delete all Shared Contacts](#delete-all-shared-contacts)
@@ -61,6 +63,12 @@ To run all examples fluently please copy the `.env.example` and name it to `.env
 
 Perform a call to a phone-number:  
 `npm run call`
+
+# IDs
+
+## List common IDs
+
+You can list the most commonly used IDs (`webUsers`, `smsExtensions`, `faxLines`, `voicemails` and `devices`) by running `npm run ids:get_common`.
 
 # Contacts
 
