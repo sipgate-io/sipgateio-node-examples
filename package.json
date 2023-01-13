@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"call": "ts-node ./call/call.ts",
+		"ids:get_common": "ts-node ./id/get_common_ids.ts",
 		"contacts:create:contact": "ts-node ./contacts/contacts_create_contact.ts",
 		"contacts:get:contacts": "ts-node ./contacts/contacts_get_contacts.ts",
 		"contacts:delete:all:private": "ts-node ./contacts/contacts_delete_all_private.ts",
